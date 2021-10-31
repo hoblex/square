@@ -1,0 +1,57 @@
+.body-page {
+    background-color: beige;
+    margin: 0;
+}
+
+.container1 {
+    margin: 20px 13px;
+    height: calc(((100vw * 2) / 3) - 21px);
+    background-color: chocolate;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px 20px;
+    grid-auto-flow: column;
+}
+
+.square1 {
+    font-family: "Bitstream Charter", sans-serif;
+    font-weight: 500;
+    background-color: aquamarine;
+}
+
+.square1:nth-child(1) {
+    box-sizing: border-box;
+    width: calc(100% + 10px);
+    height: 100%;
+    background-color: pink;
+    grid-row: span 2;
+    overflow-y: auto;
+}
+
+.container2 {
+    margin: 20px 13px;
+    height: calc(((100vw * 2) / 3) - 21px);
+    background-color: chocolate;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px 5px;
+    grid-auto-flow: column;
+}
+
+.square2 {
+    font-family: "Bitstream Charter", sans-serif;
+    font-weight: 500;
+    width: calc(100% - 5px);
+    background-color: aquamarine;
+}
+
+.square2:nth-child(3) {
+    box-sizing: border-box;
+    width: calc(100%);
+    height: 100%;
+    background-color: pink;
+    grid-row: span 2;
+    overflow-y: auto;
+}
