@@ -1,6 +1,9 @@
 :root {
     --header-color: #c4c4c4;
     --section1-color: #a2a9b7;
+    --section2-color-gray: #e8ebed;
+    --section2-color-blue: #90bce8;
+    --section2-color-yellow: #febf26;
 }
 
 .body-page {
@@ -24,7 +27,7 @@
 }
 
 .section1 {
-    margin: 0 13px 0 13px;
+    margin: 0 13px 10px 13px;
     height: calc(((100vw * 2) / 3) - 21px);
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -36,12 +39,12 @@
     font-weight: 400;
 }
 
-.square1 {
+.section1__square1 {
     background-color: var(--section1-color);
     position: relative;
 }
 
-.square1 .paragraph {
+.section1__square1 .section1__paragraph {
     position: absolute;
     bottom: 15px;
     left: 15px;
@@ -49,7 +52,7 @@
     line-height: 20px;
 }
 
-.big_square {
+.section1__big_square {
     background-color: var(--section1-color);
     box-sizing: border-box;
     width: calc(100% + 10px);
@@ -59,12 +62,52 @@
     overflow-x: hidden;
 }
 
-.big_square .paragraph {
+.section1__big_square .section1__paragraph {
     text-align: center;
     margin: 30px 46px auto 25px;
     font-size: 18px;
     line-height: 26px;
 }
+
+.section2 {
+    margin: 0 13px;
+    display: grid;
+    font-size: 14px;
+    line-height: 20px;
+    height: 320px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    grid-auto-flow: row dense;
+}
+
+.section2__element1 {
+    position: relative;
+}
+
+.section2__paragraph {
+    margin: 0;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.section2__element1--gray {
+    background-color: var(--section2-color-gray);
+}
+
+.section2__element1--long {
+    grid-column: span 2;
+}
+
+.section2__element1--blue {
+    background-color: var(--section2-color-blue);
+}
+
+.section2__element1--yellow {
+    background-color: var(--section2-color-yellow);
+}
+
 
 .section3 {
     margin: 20px 13px;
