@@ -152,3 +152,9 @@
     grid-row: span 2;
     overflow-y: auto;
 }
+
+.stuff-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
