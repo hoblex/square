@@ -1,4 +1,6 @@
 :root {
+    --basic-white: #ffffff;
+    --basic-black: #000000;
     --header-color: #c4c4c4;
     --section1-color: #a2a9b7;
     --section2-color-gray: #e8ebed;
@@ -171,7 +173,6 @@
     display: grid;
     grid-template-columns: 1fr min-content;
     align-items: end;
-    grid-;
 }
 
 .stuff-description__title{
@@ -187,7 +188,7 @@
     bottom: 0;
     position: absolute;
     width: 100%;
-    border-bottom: 1px dotted black;
+    border-bottom: 1px dotted var(--basic-black);
 }
 
 .stuff-description__desc {
@@ -204,6 +205,14 @@
     content: '';
     align-self: flex-end;
     width: 100%;
-    border-bottom: 1px dotted black;
+    border-bottom: 1px dotted var(--basic-black);
     margin-right: 5px;
+}
+
+
+.section3__square--stuff {
+    color: var(--basic-white);
+    background-image: url("image.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
