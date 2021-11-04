@@ -4,6 +4,8 @@
     --section2-color-gray: #e8ebed;
     --section2-color-blue: #90bce8;
     --section2-color-yellow: #febf26;
+    --section3-color: #e3ebd3;
+;
 }
 
 .visually-hidden {
@@ -138,23 +140,68 @@
 }
 
 .section3__square {
-    font-family: "Bitstream Charter", sans-serif;
-    font-weight: 500;
+    display: flex;
+    box-sizing: border-box;
+    background-color: var(--section3-color);
     width: calc(100% - 5px);
-    background-color: aquamarine;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: flex-end;
+}
+
+.section3__paragraph {
+    margin-left: 15px;
 }
 
 .section3__big_square {
     box-sizing: border-box;
+    background-color: var(--section3-color);
     width: calc(100%);
     height: 100%;
-    background-color: pink;
     grid-row: span 2;
     overflow-y: auto;
+    font-size: 14px;
+    line-height: 19px;
 }
 
 .stuff-description {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr min-content;
+    align-items: end;
+}
 
+.stuff-description__title{
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.stuff-description__title::after {
+    content: '';
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px dotted black;
+}
+
+.stuff-description__desc {
+    display: flex;
+    text-align: right;
+    margin: 0;
+    width: auto;
+    overflow: hidden;
+    border-bottom: none;
+    overflow-wrap: normal;
+}
+
+.stuff-description__desc::before {
+    content: '';
+    align-self: flex-end;
+    width: 100%;
+    border-bottom: 1px dotted black;
+    margin-right: 5px;
 }
