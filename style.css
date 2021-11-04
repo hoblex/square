@@ -171,6 +171,7 @@
     display: grid;
     grid-template-columns: 1fr min-content;
     align-items: end;
+    grid-;
 }
 
 .stuff-description__title{
@@ -178,6 +179,7 @@
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 
 .stuff-description__title::after {
@@ -191,7 +193,7 @@
 .stuff-description__desc {
     display: flex;
     text-align: right;
-    margin: 0;
+    margin: 0 0 30px 0;
     width: auto;
     overflow: hidden;
     border-bottom: none;
