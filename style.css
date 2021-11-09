@@ -73,7 +73,7 @@
     line-height: 20px;
 }
 
-.section1__big_square {
+.section1__big-square {
     background-color: var(--section1-color);
     box-sizing: border-box;
     width: calc(100% + 10px);
@@ -83,7 +83,7 @@
     overflow-x: hidden;
 }
 
-.section1__big_square .section1__paragraph {
+.section1__big-square .section1__paragraph {
     text-align: center;
     margin: 30px 46px auto 25px;
     font-size: 18px;
@@ -155,7 +155,7 @@
     margin-left: 15px;
 }
 
-.section3__big_square {
+.section3__big-square {
     box-sizing: border-box;
     background-color: var(--section3-color);
     width: calc(100%);
