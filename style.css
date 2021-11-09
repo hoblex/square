@@ -1,13 +1,16 @@
 :root {
     --basic-white: #ffffff;
     --basic-black: #000000;
-    --header-color: #c4c4c4;
+    --header-footer-color: #c4c4c4;
     --section1-color: #a2a9b7;
     --section2-color-gray: #e8ebed;
     --section2-color-blue: #90bce8;
     --section2-color-yellow: #febf26;
     --section3-color: #e3ebd3;
     --link-color: #b8d47d;
+    --section4-color-orange: #ffaa87;
+    --section4-color-red: #f55e62;
+    --section4-color-purple: #c7abd4;
 }
 
 .visually-hidden {
@@ -32,16 +35,18 @@
     font-weight: normal;
 }
 
-.page-header {
+.page-header,
+.page-footer {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 90px;
     margin: 0 0 10px 0;
-    background-color: var(--header-color);
+    background-color: var(--header-footer-color);
 }
 
-.page-header h1 {
+.page-header h1,
+.page-footer h2 {
     font-size: 24px;
     line-height: 20px;
     font-weight: 400;
@@ -102,7 +107,7 @@
     grid-auto-flow: row dense;
 }
 
-.section2__element1 {
+.section2__element {
     position: relative;
 }
 
@@ -113,19 +118,19 @@
     bottom: 15px;
 }
 
-.section2__element1--gray {
+.section2__element--gray {
     background-color: var(--section2-color-gray);
 }
 
-.section2__element1--long {
+.section2__element--long {
     grid-column: span 2;
 }
 
-.section2__element1--blue {
+.section2__element--blue {
     background-color: var(--section2-color-blue);
 }
 
-.section2__element1--yellow {
+.section2__element--yellow {
     background-color: var(--section2-color-yellow);
 }
 
@@ -257,4 +262,44 @@
 
 .section3__square--stuff:hover .section3__icon{
     display: block;
+}
+
+.section4 {
+    display: grid;
+    height: 320px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 13px 10px 13px;
+    grid-gap: 10px;
+    grid-auto-flow: row dense;
+}
+
+.section4__element {
+    display: flex;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: flex-end;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+.section4__element--orange {
+    background-color: var(--section4-color-orange);
+}
+
+.section4__element--red {
+    background-color: var(--section4-color-red);
+    grid-column-start: 1;
+    grid-row: 2;
+}
+
+.section4__element--purple {
+    background-color: var(--section4-color-purple);
+}
+
+.section4__element--long {
+    grid-column: span 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 1;
 }
